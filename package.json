@@ -1,0 +1,12 @@
+{
+    "name": "rules-engine",
+    "version": "1.0.0",
+    "description": "a generic business rules engine build in typescript",
+    "main": "index.js",
+    "scripts": {
+        "example": "node ./dist/example/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
