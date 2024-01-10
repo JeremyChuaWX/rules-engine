@@ -51,10 +51,10 @@ const rules: Rule<Fact>[] = [
     },
 ];
 
-const ruleEngine = new RulesEngine(rules);
+const rulesEngine = new RulesEngine(rules);
 
 console.log("---------- Execution ----------");
-ruleEngine.execute(fact, (fact) => {
+rulesEngine.execute(fact, (fact) => {
     if (fact !== undefined && fact.pass) {
         console.log("allowed");
     } else if (fact !== undefined && !fact.pass) {
