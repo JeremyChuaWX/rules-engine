@@ -3,6 +3,7 @@ type Api = {
 };
 
 type Rule<T> = {
+    name?: string;
     priority: number;
     condition: (fact: T) => boolean;
     consequence: (api: Api, fact?: T) => void;
@@ -29,6 +30,7 @@ class RulesEngine<T> {
             if (index >= rules.length || done) {
                 return;
             }
+            console.log("[current rule]", rules[index].name);
             if (rules[index].condition(fact)) {
                 rules[index].consequence(api, fact);
             }
