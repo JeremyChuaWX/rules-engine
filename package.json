@@ -4,6 +4,7 @@
     "description": "a generic business rules engine build in typescript",
     "main": "index.js",
     "scripts": {
+        "build": "tsc",
         "example": "node ./dist/example/index.js"
     },
     "keywords": [],
