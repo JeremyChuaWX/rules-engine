@@ -2,6 +2,20 @@
 
 A generic business rules engine built in Typescript.
 
+## How to use
+
+Transpile the Typescript files with the command:
+
+```bash
+npm run build
+```
+
+Run the example file with the command:
+
+```bash
+npm run example
+```
+
 ## Components
 
 ### Rule
